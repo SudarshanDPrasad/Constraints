@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#CEDFE4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="ARTICLE: "
+            android:drawableBottom="@drawable/ic_line_1__2_"
+            android:textSize="30dp"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/tvpalace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Travel"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ivtravel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvpalace"
+            android:layout_marginTop="32dp">
+
+            <ImageView
+                android:id="@+id/ivtravel2"
+                android:layout_width="293dp"
+                android:layout_height="367dp"
+                android:layout_marginStart="64dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/r"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvpalace"
+                app:layout_constraintVertical_bias="0.04" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:id="@+id/tvperson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/ivtravel"
+            android:text="Travel Life of a Person"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvshortnote"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="“I am not the same, having seen the moon shine on the other side of the world.” – Mary Anne Radmacher"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvperson" />
+
+        <TextView
+            android:id="@+id/tvlongnote"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="As cheesy as it may sound, I love inspirational travel quotes!Whether you’re planning a trip, battling post-trip blues, or just aimlessly scrolling through your phone, you can be sure there is a quote about travelling somewhere out there that will hit the spot for you.There are travel quotes about finding yourself, travel quotes to inspire your next trip, great travel quotes that push you to live your best life and more.       "
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.609"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvshortnote"
+            android:drawableBottom="@drawable/ic_line_1__2_"
+            android:drawablePadding="20dp"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+
+        <ImageView
+            android:id="@+id/ivcigratte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ciggrate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvciggrate"
+            android:layout_marginTop="50dp"/>
+
+
+
+        <TextView
+            android:id="@+id/tvciggrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="CTGRATTE"
+            android:drawableBottom="@drawable/ic_line_1__2_"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvlongnote" />
+
+        <TextView
+            android:id="@+id/tvcigquote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ivcigratte"
+            android:text="Smoking is injerous to Health"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvshortnote1"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Smoking is hateful to the nose, harmful to the brain, and dangerous to the lungs."
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvcigquote" />
+
+
+        <TextView
+            android:id="@+id/tvlongnote1"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="There always comes a day where we say to ourself I will Quit Smoking, but again we are back to square one. I hope these quit smoking quotes and sayings will inspire you to quit smoking and stay healthy. “Cigarettes are killers that travel in packs.” – Anonymous “Smoking: It ruins your life, her life, and their lives.” – Anonymous"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.609"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvshortnote1"
+            android:drawableBottom="@drawable/ic_line_1__2_"
+            android:drawablePadding="20dp"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

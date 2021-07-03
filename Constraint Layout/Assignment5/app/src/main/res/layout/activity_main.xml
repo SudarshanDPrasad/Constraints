@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="@color/blue"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+        android:drawablePadding="30dp"
+        android:gravity="center|start"
+        android:paddingLeft="25dp"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="what topic do u love? "
+        android:textSize="25dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvLogin"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"/>
+
+
+    <Button
+        android:id="@+id/btnbooks"
+        style="@style/dimension"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="112dp"
+        android:text="Books"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+
+    <Button
+        android:id="@+id/btnpodcast"
+        style="@style/dimension"
+        android:text="podcast"
+        app:layout_constraintStart_toEndOf="@id/btnbooks"
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+
+    <Button
+        android:id="@+id/btnnews"
+        style="@style/dimension"
+        android:text="news"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnbooks" />
+
+    <Button
+        android:id="@+id/btnbusiness"
+        style="@style/dimension"
+        android:text="business"
+        app:layout_constraintStart_toEndOf="@id/btnnews"
+        app:layout_constraintTop_toBottomOf="@id/btnpodcast" />
+
+    <Button
+        android:id="@+id/btnentertaninment"
+        style="@style/dimension"
+        android:text="Entertainment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnnews" />
+
+    <Button
+        android:id="@+id/btnsports"
+        style="@style/dimension"
+        android:text="sports"
+        app:layout_constraintStart_toEndOf="@id/btnentertaninment"
+        app:layout_constraintTop_toBottomOf="@id/btnbusiness" />
+
+    <Button
+        android:id="@+id/btntechnology"
+        style="@style/dimension"
+        android:text="technology"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnentertaninment" />
+
+    <Button
+        android:id="@+id/btnprouncaition"
+        style="@style/dimension"
+        android:text="pronunciation"
+        app:layout_constraintStart_toEndOf="@id/btntechnology"
+        app:layout_constraintTop_toBottomOf="@id/btnsports" />
+
+    <Button
+        android:id="@+id/btngrammer"
+        style="@style/dimension"
+        android:text="grammer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btntechnology" />
+
+    <Button
+        android:id="@+id/btnhealth"
+        style="@style/dimension"
+        android:text="health"
+        app:layout_constraintStart_toEndOf="@id/btngrammer"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnprouncaition" />
+
+    <TextView
+        android:id="@+id/tvbottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/blue"/>
+
+    <Button
+        android:layout_width="209dp"
+        android:layout_height="46dp"
+        android:text="continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvbottom"
+        app:layout_constraintStart_toStartOf="@+id/tvbottom"
+        app:layout_constraintTop_toTopOf="@id/tvbottom" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

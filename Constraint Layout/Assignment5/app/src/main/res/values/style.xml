@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="dimension">
+        <item name="android:layout_width">165dp</item>
+        <item name="android:layout_height">68dp</item>
+        <item name="android:layout_margin">30dp</item>
+        <item name="android:background"> @color/white</item>
+        <item name="android:drawableBottom">@drawable/ic_line_1__1_</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+</resources>
